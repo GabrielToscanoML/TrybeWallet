@@ -5,7 +5,7 @@ form {
   justify-content: center;
 }
 
-.email-login, .senha-login {
+.email-login , .senha-login {
   border: 1px solid black;
   border-radius: 5px;
   height: 30px;
