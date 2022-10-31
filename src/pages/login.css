@@ -1,0 +1,28 @@
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email-login, .senha-login {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 30px;
+  margin: 3px;
+}
+
+button {
+  background-color: blueviolet;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  height: 34px;
+  margin-top: 5px;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
