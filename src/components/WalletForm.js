@@ -31,7 +31,6 @@ class WalletForm extends Component {
   onClick = () => {
     const { dispatch, expenses } = this.props;
     const newExpense = { id: expenses.length, ...this.state };
-    // console.log(newExpense);
     dispatch(requestInfoAPI(newExpense));
     this.setState({ ...clearState });
   };

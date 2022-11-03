@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 class Table extends Component {
   render() {
+    const { expenses } = this.props;
+    console.log(expenses);
     return (
       <table>
         <thead>
@@ -22,4 +26,12 @@ class Table extends Component {
   }
 }
 
-export default Table;
+const mapStateToProps = (state) => ({
+  expenses: state.wallet.expenses,
+});
+
+Table.propTypes = {
+  expenses: PropTypes.arrayOf(PropTypes.shape).isRequired,
+};
+
+export default connect(mapStateToProps)(Table);
