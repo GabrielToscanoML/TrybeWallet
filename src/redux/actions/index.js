@@ -7,14 +7,12 @@ const userEmail = (email) => ({
 export default userEmail;
 
 const REQUEST_CURRENCIES = 'REQUEST_CURRENCIES';
-
 function requestCurrencies(currencies) {
   return {
     type: REQUEST_CURRENCIES,
     currencies,
   };
 }
-
 export function requestCurrenciesAPI() {
   return async (dispatch) => {
     const request = await fetch('https://economia.awesomeapi.com.br/json/all');
@@ -25,14 +23,12 @@ export function requestCurrenciesAPI() {
 }
 
 const USER_EXPENSE = 'USER_EXPENSE';
-
 function requestInfo(expense) {
   return {
     type: USER_EXPENSE,
     expense,
   };
 }
-
 export function requestInfoAPI(value) {
   return async (dispatch) => {
     const request = await fetch('https://economia.awesomeapi.com.br/json/all');
@@ -41,3 +37,8 @@ export function requestInfoAPI(value) {
     dispatch(requestInfo(userExpense));
   };
 }
+
+export const removeUserExpense = (payload) => ({
+  type: 'REMOVE_USER_EXPENSE',
+  payload,
+});
