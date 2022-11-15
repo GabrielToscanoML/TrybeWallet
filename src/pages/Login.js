@@ -59,12 +59,12 @@ class Login extends React.Component {
           onChange={ this.handleInputOnChange }
         />
         <button
+          name="button-login"
           type="button"
           disabled={ this.validationLogin() }
           onClick={ this.onClickButton }
         >
           Entrar
-
         </button>
       </form>
     );

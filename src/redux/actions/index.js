@@ -13,6 +13,7 @@ function requestCurrencies(currencies) {
     currencies,
   };
 }
+
 export function requestCurrenciesAPI() {
   return async (dispatch) => {
     const request = await fetch('https://economia.awesomeapi.com.br/json/all');
@@ -29,6 +30,7 @@ function requestInfo(expense) {
     expense,
   };
 }
+
 export function requestInfoAPI(value) {
   return async (dispatch) => {
     const request = await fetch('https://economia.awesomeapi.com.br/json/all');

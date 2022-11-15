@@ -9,7 +9,6 @@ class Header extends Component {
     const convertCurrency = expenses.map((item) => +item.value
     * +item.exchangeRates[item.currency].ask);
     const result = convertCurrency.reduce((prev, curr) => prev + curr, 0);
-    // console.log(expenses);
     return (
       <main>
         <img src="/logo_Trybe_Wallet.svg" alt="logoTrybe" />

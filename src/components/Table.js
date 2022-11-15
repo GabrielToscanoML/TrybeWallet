@@ -7,7 +7,6 @@ class Table extends Component {
   removeItem = (id) => {
     const { expenses, dispatch } = this.props;
     const remove = expenses.filter((item) => item.id !== id);
-    // console.log(remove);
     // enviando as despesas sem a que foi clicada
     dispatch(removeUserExpense(remove));
   };
