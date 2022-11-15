@@ -11,7 +11,7 @@ describe('Testando os inputs e botão da página de Login', () => {
     const password = screen.getByTestId('password-input');
     expect(password).toBeInTheDocument();
   });
-  it('Testando se ao clicar no botão de Login, é direcionado para a carteira', async () => {
+  it('Testando se ao clicar no botão de Login, é direcionado para a carteira', () => {
     const { history } = renderWithRouterAndRedux(<App />);
     const email = screen.getByTestId('email-input');
     const senha = screen.getByTestId('password-input');
