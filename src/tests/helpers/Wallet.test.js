@@ -26,7 +26,7 @@ describe('Testando os inputs da página Wallet', () => {
 });
 
 describe('Testando o componente WalletForm', () => {
-  it('testeee', () => {
+  it('Testa se ao colocar valores no input, o botão de adicionar despesa funciona', () => {
     renderWithRouterAndRedux(<WalletForm />);
     const buttonAdd = screen.getByRole('button', { name: /adicionar despesa/i });
     expect(buttonAdd).toBeInTheDocument();
