@@ -1,4 +1,3 @@
-// Coloque aqui suas actions
 const userEmail = (email) => ({
   type: 'USER_EMAIL',
   payload: email,
@@ -8,10 +7,7 @@ export default userEmail;
 
 const REQUEST_CURRENCIES = 'REQUEST_CURRENCIES';
 function requestCurrencies(currencies) {
-  return {
-    type: REQUEST_CURRENCIES,
-    currencies,
-  };
+  return { type: REQUEST_CURRENCIES, currencies };
 }
 
 export function requestCurrenciesAPI() {
