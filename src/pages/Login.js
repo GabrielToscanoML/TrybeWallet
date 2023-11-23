@@ -42,44 +42,46 @@ class Login extends React.Component {
     const { email, password } = this.state;
     return (
       <main className="main-content">
-        <div className="login-container">
-          <img
-            src={ logo }
-            alt="logoTrybe"
-            width="80%"
-          />
-          <form className="form-container">
-            <input
-              className="email-login"
-              type="email"
-              data-testid="email-input"
-              placeholder="Digite seu Email"
-              name="email"
-              value={ email }
-              onChange={ this.handleInputOnChange }
+        <section className="teste">
+          <div className="login-container">
+            <img
+              src={ logo }
+              alt="logoTrybe"
+              width="80%"
             />
-            <input
-              className="senha-login"
-              type="password"
-              data-testid="password-input"
-              placeholder="Digite sua senha"
-              name="password"
-              value={ password }
-              onChange={ this.handleInputOnChange }
-            />
-            {this.validationLogin() && password.length > 0
-              ? <small>Email ou senha inválidos!</small>
-              : null}
-            <button
-              name="button-login"
-              type="button"
-              disabled={ this.validationLogin() }
-              onClick={ this.onClickButton }
-            >
-              Entrar
-            </button>
-          </form>
-        </div>
+            <form className="form-container">
+              <input
+                className="email-login"
+                type="email"
+                data-testid="email-input"
+                placeholder="Digite seu Email"
+                name="email"
+                value={ email }
+                onChange={ this.handleInputOnChange }
+              />
+              <input
+                className="senha-login"
+                type="password"
+                data-testid="password-input"
+                placeholder="Digite sua senha"
+                name="password"
+                value={ password }
+                onChange={ this.handleInputOnChange }
+              />
+              {this.validationLogin() && password.length > 0
+                ? <small>Email ou senha inválidos!</small>
+                : null}
+              <button
+                name="button-login"
+                type="button"
+                disabled={ this.validationLogin() }
+                onClick={ this.onClickButton }
+              >
+                Entrar
+              </button>
+            </form>
+          </div>
+        </section>
       </main>
     );
   }

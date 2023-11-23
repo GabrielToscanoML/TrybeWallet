@@ -1,12 +1,12 @@
-main {
+.main-header {
   align-items: center;
   display: flex;
   font-size: 19px;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
-  width: 800px;
+  padding: 20px 100px;
+  width: 100%;
 }
 
 .despesa {

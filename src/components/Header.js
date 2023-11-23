@@ -11,7 +11,7 @@ class Header extends Component {
     * +item.exchangeRates[item.currency].ask);
     const result = convertCurrency.reduce((prev, curr) => prev + curr, 0);
     return (
-      <main>
+      <header className="main-header">
         <img src={ logo } alt="logoTrybe" />
         <div className="right-side">
           <p data-testid="email-field">
@@ -31,7 +31,7 @@ class Header extends Component {
             </p>
           </div>
         </div>
-      </main>
+      </header>
     );
   }
 }

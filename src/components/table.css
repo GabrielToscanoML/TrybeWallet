@@ -1,0 +1,39 @@
+.expenses-container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  align-items: center;
+}
+
+table, th, td {
+  border: 1px solid #444;
+  border-collapse: collapse;
+  padding: 5px 5px;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+
+th {
+  background-color: #4DC18B;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.description {
+  text-align: start;
+  max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.method {
+  width: 125px;
+}
