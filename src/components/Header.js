@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import './header.css';
+import logo from '../assets/logo_Trybe_Wallet.svg';
 
 class Header extends Component {
   render() {
@@ -11,7 +12,7 @@ class Header extends Component {
     const result = convertCurrency.reduce((prev, curr) => prev + curr, 0);
     return (
       <main>
-        <img src="/logo_Trybe_Wallet.svg" alt="logoTrybe" />
+        <img src={ logo } alt="logoTrybe" />
         <div className="right-side">
           <p data-testid="email-field">
             Email:

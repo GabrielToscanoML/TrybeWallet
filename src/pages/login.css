@@ -1,28 +1,71 @@
-form {
+.main-content {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/background-img.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
   align-items: center;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 12px;
+  height: 500px;
+  width: 350px;
+  /* padding: 20px; */
+}
+
+img {
+  height: 30%;
+
+  /* margin-top: 20px; */
+}
+
+form {
+  height: 70%;
+  /* margin-bottom: 20px; */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 15px;
+  width: 80%;
 }
 
 .email-login , .senha-login {
   border: 1px solid black;
   border-radius: 5px;
-  height: 30px;
-  margin: 3px;
+  height: 50px;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 button {
-  background-color: blueviolet;
+  background-color: #4DC18B;
   border-radius: 5px;
   color: white;
   cursor: pointer;
   font-size: 20px;
-  height: 34px;
+  font-weight: bold;
+  height: 50px;
   margin-top: 5px;
 }
 
 button:disabled {
   cursor: wait;
   opacity: 0.5;
+  color: black;
+}
+
+small {
+  color: red;
 }
